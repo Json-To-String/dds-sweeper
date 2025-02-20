@@ -207,8 +207,8 @@ Bulk setting of instructions in binary. `start address` is the address of the fi
    - Amplitude Sweeps (mode 1) with timing: `<start amplitude:int 16> <stop amplitude:int 16> <delta:int 16> <rate:int 8> <time:int 32>`. Total of 11 bytes per channel per instruction.  
    - Frequency Sweeps (mode 2): `<start frequency:int 32> <stop frequency:int 32> <delta:int 32> <rate:int 8>`. Total of 13 bytes per channel per instruction.  
    - Frequency Sweeps (mode 2) with timing: `<start frequency:int 32> <stop frequency:int 32> <delta:int 32> <rate:int 8> <time:int 32>`. Total of 17 bytes per channel per instruction.  
-   - Phase Sweeps (mode 1): `<start phase:int 16> <stop phase:int 16> <delta:int 16> <rate:int 8>`. Total of 7 bytes per channel per instruction.  
-   - Phase Sweeps (mode 1) with timing: `<start phase:int 16> <stop phase:int 16> <delta:int 16> <rate:int 8> <time:int 32>`. Total of 11 bytes per channel per instruction.  
+   - Phase Sweeps (mode 3): `<start phase:int 16> <stop phase:int 16> <delta:int 16> <rate:int 8>`. Total of 7 bytes per channel per instruction.  
+   - Phase Sweeps (mode 3) with timing: `<start phase:int 16> <stop phase:int 16> <delta:int 16> <rate:int 8> <time:int 32>`. Total of 11 bytes per channel per instruction.  
    - Amplitude Sweep and Single Stepping (mode 4): `<start amplitude:int 16> <stop amplitude:int 16> <delta:int 16> <rate:int 8> <frequency:int 32> <phase:int 16>`. Total of 13 bytes per channel per instruction.  
    - Amplitude Sweep and Single Stepping (mode 4) with timing: `<start amplitude:int 16> <stop amplitude:int 16> <delta:int 16> <rate:int 8> <frequency:int 32> <phase:int 16> <time:int 32>`. Total of 17 bytes per channel per instruction.  
    - Frequency Sweep and Single Stepping (mode 5): `<start frequency:int 32> <stop frequency:int 32> <delta:int 32> <rate:int 8> <amplitude:int 16> <phase:int 16>`. Total of 17 bytes per channel per instruction.  
@@ -230,7 +230,7 @@ Retrieves the buffered execution table stored in nonvolatile memory and restores
 Turns on extra debug messages printed over serial. `state` should be `on` or `off` (no string quotes required).
 
 * `numtriggers`:  
-Responds with the nmumber of triggers processed since the last call of `start`
+Responds with the number of triggers processed since the last call of `start`
 
 * `program`:  
 Reboots the Pi Pico into firmware flashing mode. Serial will immediately disconnect and a mass storage device should appear.
