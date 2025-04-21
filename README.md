@@ -46,7 +46,7 @@ E. Huegler, J. C. Hill, and D. H. Meyer, An agile radio-frequency source using i
 
 ## How to flash the firmware
 
-Download the latest [dds-sweeper.uf2 file](https://github.com/QTC-UMD/dds-sweeper/releases/latest/download/dds-sweeper.uf2).
+Download the latest [dds-sweeper_rp2040.uf2 file for Pi Pico](https://github.com/QTC-UMD/dds-sweeper/releases/latest/download/dds-sweeper_rp2040.uf2) or [dds-sweeper_rp2040.uf2 file for Pi Pico 2](https://github.com/QTC-UMD/dds-sweeper/releases/latest/download/dds-sweeper_rp2350.uf2).
 On your Raspberry Pi Pico, hold down the "bootsel" button while plugging the Pico into USB port on a PC (that must already be turned on).
 The Pico should mount as a mass storage device (if it doesn't, try again or consult the Pico documentation).
 Drag and drop the `.uf2` file into the mounted mass storage device.
